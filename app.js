@@ -5,7 +5,7 @@ function createMatrix(width,height){
     }
     return matrix;
 }
-
+matrix = fillMatrix(createMatrix(10,10));
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value; // Display the default slider value
@@ -22,6 +22,10 @@ class Node{
     this.status = status;
     this.pointer = pointer;
   }
+  constructor(x,y){
+    this.x = x;
+    this.y = y;
+  }
   get status(){
     return this.status;
   }
@@ -36,7 +40,15 @@ class Node{
   }
   
 }
-function findPath(...matrix){
+function fillMatrix(...matrix){
+  for(var i = 0; i < matrix.length; i++){
+    for(var v = 0; v < matrix[i].length; v++){
+      matrix[i][j] = new Node(i,j);
+    }
+  }
+  return matrix;
+}
+function djikstrasAlgorithm(...matrix){
   return matrix;
 }
 
