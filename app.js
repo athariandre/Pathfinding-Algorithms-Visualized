@@ -16,10 +16,28 @@ slider.oninput = function() {
 }
 
 class Node{
-  constructor(x,y,)
+  constructor(x,y,status, pointer){
+    this.x = x;
+    this.y = y;
+    this.status = status;
+    this.pointer = pointer;
+  }
+  get status(){
+    return this.status;
+  }
+  get x(){
+    return this.x;
+  }
+  get y(){
+    return this.y;
+  }
+  get pointer(){
+    return this.pointer;
+  }
+  
 }
-function findPath(matrix){
-
+function findPath(...matrix){
+  return matrix;
 }
 
 
