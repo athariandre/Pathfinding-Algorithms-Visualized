@@ -16,6 +16,14 @@ slider.oninput = function() {
 }
 
 class Node{
+  /*
+  Status:
+  null = none
+  0 = wall
+  1 = open
+  2 = explored
+  3 = chosen as fastest path
+  */
   constructor(x,y,status, pointer){
     this.x = x;
     this.y = y;
