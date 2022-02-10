@@ -56,7 +56,7 @@ function fillMatrix(...matrix){
   }
   return matrix;
 }
-function djikstrasAlgorithm(...matrix){
+function astar(...matrix){
   return matrix;
 }
 
